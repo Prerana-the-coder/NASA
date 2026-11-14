@@ -11,6 +11,12 @@ npm run dev
 
 Run `npm run build` for a production build and `npm run lint` for Oxlint.
 
+## PostgreSQL schema
+
+The PostgreSQL + PostGIS schema is in [`database/schema.sql`](./database/schema.sql).
+Create a database with PostgreSQL and apply it with `psql -d <database_name> -f database/schema.sql`.
+The database user needs permission to install the `postgis` and `pgcrypto` extensions.
+
 ## What Works
 
 - Switch between Mars and the Moon; select landmarks from the list or approximate equirectangular coordinate plot.
